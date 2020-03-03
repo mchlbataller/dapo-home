@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  nav a.navbar-brand img {
+    width: 100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header.container-fluid {
+  background: whitesmoke;
+  height: 480px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .header.container-fluid {
+    padding: 35px;
+    height: 900px;
+    padding-top: 50px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .header.container-fluid {
+    padding: 105px;
   }
 }
+
+@media screen and (min-width: 1367px) {
+  .header.container-fluid {
+    padding: 100px;
+  }
+}
+
+img.ps-btn {
+  margin-left: -10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  img.ps-btn {
+    width: 200px;
+  }
+}
+
+div.video .borderless td,
+div.video .borderless th {
+  border: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  div.video iframe {
+    width: 270px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  div.video iframe {
+    width: 590px !important;
+    height: 320px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.video iframe {
+    width: 690px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  div.video div.row .caption {
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  div.video div.row .caption {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  div.video div.row .caption {
+    padding-top: 25px;
+  }
+}
+
+div.video div.row .caption h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  div.video div.row .caption {
+    width: 750px;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 0px 50px 0px 50px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

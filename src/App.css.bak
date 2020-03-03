@@ -1,0 +1,55 @@
+.header.container-fluid {
+    padding: 105px;
+    background: whitesmoke;
+    height: 480px;
+    overflow: hidden;
+}
+
+img.fade-in-bottom {
+    margin-top: -50px;
+}
+
+/* Default for youtube video */
+.youtube {
+    height: 250px;
+}
+@media screen and (max-width: 340px) {
+    .youtube {
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header.container-fluid {
+        padding: 30px !important;
+        height: 900px;
+        padding-top: 50px;
+    }
+    img.fade-in-bottom {
+        margin-top: 50px;
+    }
+    div.video {
+        padding: 30px;
+    }
+    .youtube {
+        width: 320px;
+    }
+    div.col {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 4000px) {
+    footer {
+        padding: 50px;
+    }
+    .youtube {
+        width: 500px;
+        height: 320px;
+    }
+}
+
+img.ps-btn {
+    margin-left: -15px;
+    width: 200px;
+}
