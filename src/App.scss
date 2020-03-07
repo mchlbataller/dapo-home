@@ -3,25 +3,23 @@
         @content;
     }
 }
-
 @mixin tablet {
     @media screen and (min-width: 768px) and (max-width: 1366px) {
         @content;
     }
 }
-
 @mixin laptop-min {
     @media screen and (min-width: 768px) {
         @content;
     }
 }
-
 @mixin desktop {
     @media screen and (min-width: 1367px) {
         @content;
     }
 }
 
+// Navbar
 nav {
     a.navbar-brand {
         @include phone {
@@ -33,6 +31,7 @@ nav {
     }
 }
 
+// Header: Project DAPO
 .header.container-fluid {
     @include phone {
         padding: 35px;
@@ -48,19 +47,31 @@ nav {
         padding: 100px;
     }
 
-    background: whitesmoke;
+    background: beige;
     height: 480px;
     overflow: hidden;
-}
+    // The Play Store button
+    img.ps-btn {
+        @include phone {
+            width: 200px;
+        }
 
-img.ps-btn {
-    @include phone {
-        width: 200px;
+        margin-left: -10px;
     }
 
-    margin-left: -10px;
 }
 
+.about-this-project {
+    @include phone {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include tablet {
+        padding: 100px;
+    }
+}
+
+// The container which the YouTube video is embedded
 div.video {
     .borderless td,
     .borderless th {
@@ -113,6 +124,7 @@ div.video {
     }
 }
 
+// The footer
 footer {
     @include laptop-min {
         padding: 0px 50px 0px 50px;

@@ -5,11 +5,10 @@
 }
 
 .header.container-fluid {
-  background: whitesmoke;
+  background: beige;
   height: 480px;
   overflow: hidden;
 }
-
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .header.container-fluid {
     padding: 35px;
@@ -17,26 +16,34 @@
     padding-top: 50px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   .header.container-fluid {
     padding: 105px;
   }
 }
-
 @media screen and (min-width: 1367px) {
   .header.container-fluid {
     padding: 100px;
   }
 }
-
-img.ps-btn {
+.header.container-fluid img.ps-btn {
   margin-left: -10px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .header.container-fluid img.ps-btn {
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  img.ps-btn {
-    width: 200px;
+  .about-this-project {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .about-this-project {
+    padding: 100px;
   }
 }
 
@@ -44,7 +51,6 @@ div.video .borderless td,
 div.video .borderless th {
   border: none;
 }
-
 @media screen and (min-width: 0px) and (max-width: 767px) {
   div.video iframe {
     width: 270px;
@@ -52,43 +58,36 @@ div.video .borderless th {
     margin-bottom: 30px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   div.video iframe {
     width: 590px !important;
     height: 320px !important;
   }
 }
-
 @media screen and (min-width: 768px) {
   div.video iframe {
     width: 690px;
     height: 400px;
   }
 }
-
 @media screen and (min-width: 1367px) {
   div.video div.row .caption {
     vertical-align: middle;
   }
 }
-
 @media screen and (min-width: 0px) and (max-width: 767px) {
   div.video div.row .caption {
     padding: 25px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   div.video div.row .caption {
     padding-top: 25px;
   }
 }
-
 div.video div.row .caption h2 {
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 768px) {
   div.video div.row .caption {
     width: 750px;
@@ -101,4 +100,5 @@ div.video div.row .caption h2 {
     padding: 0px 50px 0px 50px;
   }
 }
+
 /*# sourceMappingURL=App.css.map */

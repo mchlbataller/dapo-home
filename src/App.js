@@ -22,8 +22,8 @@ function Head() {
         <Nav className="ml-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <NavDropdown title="Download" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Google Play Store</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Direct</NavDropdown.Item>
+            <NavDropdown.Item href="https://play.google.com/store/apps/details?id=com.vlct.dapo_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Google Play Store</NavDropdown.Item>
+            <NavDropdown.Item href="/downloads/com.vlct.dapo.apk">Direct</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="#about">About Us</Nav.Link>
         </Nav>
@@ -37,10 +37,10 @@ function Head() {
       <R.Container fluid className="header">
         <R.Row>
           <R.Col sm>
-            <h1>Project DAPO</h1>
+            <h1>Test Site</h1>
             <p>A project concerned about tracking and spotting mosquito <br />whereabouts and infections through crowdsourced data.        </p>
             <p >Be part of our community! Download the app now.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.vlct.dapo_app&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <a href="https://play.google.com/store/apps/details?id=com.vlct.dapo_app&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" height="200px">
               <img class="ps-btn" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="250px" />
             </a>
           </R.Col>
@@ -53,8 +53,15 @@ function Head() {
   };
 
   function Body() {
-    return (
-      <R.Container fluid className="p-sm-5 video">
+	const about = (
+	<R.Container fluid className="p-sm-5 about-this-project text-center">
+		<h1 className="pt-sm-5 pb-3"> Data-driven Project, for the people </h1>
+		<p> Project DAPO is a community project whose data will be used to enumerate mosquito hotspots in order to effectively prevent the increasing dengue cases in the Philippines. </p>
+	</R.Container>
+	);
+
+	const video = (
+	<R.Container fluid className="p-sm-5 video">
           <R.Row className="p-sm-5 text-center">
             <R.Col sm><iframe className="youtube" src="https://www.youtube.com/embed/BstKtTG-UM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </R.Col>
@@ -67,8 +74,19 @@ function Head() {
             </R.Col>
           </R.Row>
       </R.Container>
+    );
 
+	const theTeam = (
+	    <R.Container fluid className="pt-5 pb-5 pl-sm-5 pr-sm-5">
+          <R.Row>
+            <R.Col>
+
+            </R.Col>
+          </R.Row>
+        </R.Container>
     )
+
+	return [about, video, theTeam];
   }
 
   function FooterPage() {
@@ -83,7 +101,10 @@ function Head() {
             <R.Col md="6">
               <h5 className="title">Contact Us</h5>
               <li className="list-unstyled">
-                <p>Email: mchlbataller@gmail.com</p>
+		<p>Project Adviser: Bob Mathew D. Sunga, MS-DSE <br />
+		Email: bobdsunga@i.xs.edu.ph </p>
+		<hr/>
+                <p>Webmaster: mchlbataller@gmail.com</p>
               </li>
             </R.Col>
           </R.Row>
