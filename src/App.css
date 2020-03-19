@@ -207,6 +207,7 @@ section .section-title {
   -ms-transform-style: preserve-3d;
   transition: 1s;
   transform-style: preserve-3d;
+  width: 100%;
 }
 
 .frontside .card,
