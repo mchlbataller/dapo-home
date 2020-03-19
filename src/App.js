@@ -122,17 +122,17 @@ class Members extends React.Component {
 		this.setState({
 			members: [
 				{
-					name: "Marx Chrys Del Mundo",
-					role: "Android Developer",
-					imgsrc: "https://trello-attachments.s3.amazonaws.com/5e00ca58a842a27e5670adce/5e269438d9dcd963a8409ec9/d50e6893b3bf13a367d71dfa06f06a94/received_2298367050480432.jpeg"
-				},
-				{
 					name: "Bob Mathew D. Sunga",
 					role: "Project Adviser",
 					imgsrc: "https://scontent.fmnl4-2.fna.fbcdn.net/v/t31.0-8/s960x960/13908881_10208853903536319_8398366693428001309_o.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_eui2=AeHMToSsaOSoK78RKWFXPkQ0QA2r5DNQjd_QYxLtk72BU6r4mT_YHcVHXBpHM3zRtP5At1782EoCppn_UAHOeiYx-eM2PPdISfTQxKOWC_nTEw&_nc_ohc=dLw_bUX9xFcAX9B6rQg&_nc_ht=scontent.fmnl4-2.fna&_nc_tp=7&oh=0ca8dac87716c7c7cdf0484417d3cbe4&oe=5E9A8C33"
 				},
 				{
-					name: "Montgomery Van Brussel Toft",
+					name: "Marx Chrys Del Mundo",
+					role: "Android Developer",
+					imgsrc: "https://trello-attachments.s3.amazonaws.com/5e00ca58a842a27e5670adce/5e269438d9dcd963a8409ec9/d50e6893b3bf13a367d71dfa06f06a94/received_2298367050480432.jpeg"
+				},
+				{
+					name: "Montgomery Toft",
 					role: "User Interface/Experience",
 					imgsrc: "https://trello-attachments.s3.amazonaws.com/5e268f98cb6fab7e653c390b/600x600/da74283bd9feb1144d3e8346f55f659a/received_1691995317582359.jpeg.jpg"
 				},
@@ -152,7 +152,7 @@ class Members extends React.Component {
 					imgsrc: "https://trello-attachments.s3.amazonaws.com/5e2ecfe0c5dd117536b1ff61/526x526/63f8b87b502037c28d53221c8ddbba4d/Dela_Cruz.png"
 				},
 				{
-					name: "Michael C. Bataller",
+					name: "Michael Bataller",
 					role: "Web Developer",
 					imgsrc: "https://trello-attachments.s3.amazonaws.com/5e2675c43cd56e6ed7d3b641/542x543/d48701c3042e64f8ffccc8baaa396dbb/IMG_20191112_093453_-_Michael_Bataller.JPG.jpg"
 
@@ -171,7 +171,7 @@ class Members extends React.Component {
 			<React.Fragment>
 				<section id="team" class="pb-5">
 					<div class="container">
-						<h5 class="section-title h1">OUR TEAM</h5>
+						<h5 class="text-center text-black h1 pb-5">Our Team</h5>
 						<div class="row">
 							{this.state.members.map((x =>
 								<MemberCard name={x.name} role={x.role} imgsrc={x.imgsrc} />
@@ -193,7 +193,6 @@ const App = () => {
 			<Members />
 			<FooterPage />
 			<Footer />
-
 		</React.Fragment>
 	)
 }
