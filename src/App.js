@@ -144,7 +144,7 @@ class Members extends React.Component {
 				{
 					name: "Nico Del Rosario",
 					role: "Web Developer",
-					imgsrc: "https://trellox-attachments.s3.amazonaws.com/5e00ca58a842a27e5670adce/5e1f3197cc09b070084bfaec/2a5ea5f4db3654e691afd071e7af5a1d/image.png"
+					imgsrc: "https://trello-attachments.s3.amazonaws.com/5e00ca58a842a27e5670adce/5e1f3197cc09b070084bfaec/2a5ea5f4db3654e691afd071e7af5a1d/image.png"
 				},
 				{
 					name: "Franz Joshua Dela Cruz",
