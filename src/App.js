@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/anim/entrances.css'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import * as R from 'react-bootstrap';
+import MemberCard from './MemberCard';
 
 
 
@@ -126,6 +127,17 @@ function App() {
   return (
     <React.Fragment>
       <Head />
+      <section id="team" class="pb-5">
+        <div class="container">
+          <h5 class="section-title h1">OUR TEAM</h5>
+          <div class="row">
+            <MemberCard />
+          </div>
+        </div>
+      </section>
+
+
+
     </React.Fragment>
   );
 }
