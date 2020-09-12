@@ -124,7 +124,7 @@ class Members extends React.Component {
 				{
 					name: "Bob Mathew D. Sunga",
 					role: "Project Adviser",
-					imgsrc: "https://scontent.fmnl4-2.fna.fbcdn.net/v/t31.0-8/s960x960/13908881_10208853903536319_8398366693428001309_o.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_eui2=AeHMToSsaOSoK78RKWFXPkQ0QA2r5DNQjd_QYxLtk72BU6r4mT_YHcVHXBpHM3zRtP5At1782EoCppn_UAHOeiYx-eM2PPdISfTQxKOWC_nTEw&_nc_ohc=dLw_bUX9xFcAX9B6rQg&_nc_ht=scontent.fmnl4-2.fna&_nc_tp=7&oh=0ca8dac87716c7c7cdf0484417d3cbe4&oe=5E9A8C33"
+					imgsrc: "https://i.imgur.com/FLkOLw7.png"
 				},
 				{
 					name: "Marx Chrys Del Mundo",
